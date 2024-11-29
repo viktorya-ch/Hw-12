@@ -1,5 +1,6 @@
 ### IntelliJ IDEA ###
 .idea
+
 Homework12.iml
 out/
 !**/src/main/**/out/
