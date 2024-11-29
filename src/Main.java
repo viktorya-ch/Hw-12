@@ -1,7 +1,6 @@
 
 public class Main {
 
-
     public static void main(String[] args) {
         Book greenMile = new Book("Green mile", 1996, "Stephen King");
         System.out.println("greenMile.title = " + greenMile.getTitle());
