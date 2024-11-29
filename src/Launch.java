@@ -9,7 +9,8 @@ public class Launch {
         System.out.println("insurgent.getAuthor() = " + insurgent.getAuthor());
         insurgent.setYear(2010);
         System.out.println("insurgent.getYear() = " + insurgent.getYear());
-    }}
+    }
+}
 
 
 
