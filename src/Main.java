@@ -1,11 +1,11 @@
-
 public class Main {
 
     public static void main(String[] args) {
-        Book greenMile = new Book("Green mile", 1996, "Stephen King");
+
+        Book greenMile = new Book("Green mile", new Author("Stephen", "King"), 1996);
         System.out.println("greenMile.title = " + greenMile.getTitle());
+        System.out.println(new Author("Stephen", "King"));
         System.out.println("greenMile.year = " + greenMile.getYear());
-        System.out.println("greenMile.author = " + greenMile.getAuthor());
         greenMile.setYear(1994);
         System.out.println("greenMile.getYear() = " + greenMile.getYear());
 
@@ -15,22 +15,22 @@ public class Main {
         System.out.println("writer.surname = " + writer.getSurname());
 
         //Object#1
-        Book freeFall = new Book("Free fall", 2019, "Jessica Barry");
+        Book freeFall = new Book("Free fall", new Author("Jessica", "Barry"), 2019);
         freeFall.setTitle("Free fall");
         System.out.println("freeFall.getTitle() = " + freeFall.getTitle());
+        System.out.println(new Author("Jessica", "Barry"));
         freeFall.setYear(2019);
         System.out.println("freeFall.getYear() = " + freeFall.getYear());
-        freeFall.setAuthor("Jessica Barry");
-        System.out.println("freeFall.getAuthor() = " + freeFall.getAuthor());
+
 
         //Object#2
-        Book insurgent = new Book("Insurgent", 2012, "Veronica Roth");
+        Book insurgent = new Book("Insurgent", new Author("Veronica", "Roth"), 2012);
         insurgent.setTitle("Insurgent");
         System.out.println("insurgent.getTitle() = " + insurgent.getTitle());
+        System.out.println(new Author("Veronica", "Roth"));
         insurgent.setYear(2012);
         System.out.println("insurgent.getYear() = " + insurgent.getYear());
-        insurgent.setAuthor("Veronica Roth");
-        System.out.println("insurgent.getAuthor() = " + insurgent.getAuthor());
+
 
         //Object#3
         Author author = new Author("Jessica", "Barry");
@@ -40,10 +40,10 @@ public class Main {
         System.out.println("author.getSurname() = " + author.getSurname());
 
         //Object#4
-        Author author1 = new Author("Veronica", "Roth");
-        author1.setName("Veronica");
-        System.out.println("author1.getName() = " + author1.getName());
-        author.setSurname("Roth");
-        System.out.println("author1.getSurname() = " + author1.getSurname());
+        Author roth = new Author("Veronica", "Roth");
+        roth.setName("Veronica");
+        System.out.println("roth.getName() = " + roth.getName());
+        roth.setSurname("Roth");
+        System.out.println("roth.getSurname() = " + roth.getSurname());
     }
 }
