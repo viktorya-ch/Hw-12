@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -45,5 +47,26 @@ public class Main {
         System.out.println("roth.getName() = " + roth.getName());
         roth.setSurname("Roth");
         System.out.println("roth.getSurname() = " + roth.getSurname());
+
+        System.out.println(roth);
+        System.out.println(greenMile);
+
+
+        Author jessica = new Author("Jessica " , " Barry ");
+        Author veronica = new Author("Veronica ", " Roth");
+        System.out.println(jessica == veronica);
+        System.out.println(jessica.equals(veronica));
+
+
+
+        Book freeFall1 = new Book("Free fall" , new Author("Jessica", "Barry"), 2019);
+        Book book = new Book("Insurgent", new Author("Veronica", "Roth"), 2012);
+        System.out.println(freeFall1 == book);
+        System.out.println(freeFall1.equals(book));
+        System.out.println(Objects.hash());
+
+
+
     }
 }
+
